@@ -1,0 +1,66 @@
+import AnimatedNumber, { NumberMetaData } from "@/components/shared/AnimatedNumber";
+
+interface StatisticsSectionProps {
+  title?: string;
+  subtitle?: string;
+  description?: string;
+  statistics?: {
+    activeClients: NumberMetaData;
+    adAccounts: NumberMetaData;
+    adSpend: NumberMetaData;
+  };
+}
+
+const StatisticsSection: React.FC<StatisticsSectionProps> = ({
+  title = "The Numbers That Define\nOur Success",
+  subtitle = "Our clients trust us, and we're certain you will too!",
+  description = "Over the last 4 years, Skala has thrived, delivering exceptional results for over 3,000 clients.\nOur commitment to innovation and excellence has solidified our reputation as a trusted partner in their success.",
+  statistics = {
+    activeClients: {
+      number: 800,
+      suffix: "+",
+    },
+    adAccounts: {
+      number: 3600,
+      suffix: "+",
+    },
+    adSpend: {
+      number: 10,
+      prefix: "$",
+      suffix: "M+",
+    },
+  },
+}) => {
+  return (
+    <div className="statistics-section">
+      <h1 className="main-title">{title}</h1>
+      <p className="subtitle">{subtitle}</p>
+
+      <div className="statistics-container">
+        <StatisticItem numberMetData={statistics.activeClients} label="ACTIVE CLIENTS" />
+        <StatisticItem numberMetData={statistics.adAccounts} label="AD ACCOUNTS SHARED" />
+        <StatisticItem numberMetData={statistics.adSpend} label="ADVERTISING SPEND" />
+      </div>
+
+      <h2 className="secondary-title">Why Clients Love Our Service</h2>
+      <p className="description">{description}</p>
+    </div>
+  );
+};
+
+export default StatisticsSection;
+
+interface StatisticItemProps {
+  numberMetData: NumberMetaData;
+  label: string;
+}
+
+const StatisticItem: React.FC<StatisticItemProps> = ({ numberMetData, label }) => (
+  <div className="statistic-item">
+    <div className="number-container">
+      <AnimatedNumber number={numberMetData.number} />
+      {numberMetData.suffix ? <span className="plus">{numberMetData.suffix}</span> : null}
+    </div>
+    <div className="label">{label}</div>
+  </div>
+);
