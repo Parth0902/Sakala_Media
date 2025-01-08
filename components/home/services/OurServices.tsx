@@ -1,10 +1,6 @@
 import React from "react";
 import "./OurServices.css";
 import ServiceCard, { ServiceCardProps } from "./ServiceCard";
-import left from "@/assets/sec2_b_l.svg"
-import right from "@/assets/sec2_b_r.svg"
-import topright from "@/assets/sec2_t_r.svg"
-import Image from "next/image";
 import Gradient from "@/components/shared/Gradient";
 const HeaderSection: React.FC = () => {
   return (

@@ -1,8 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import Gradient from "@/components/shared/Gradient";
-import PersonInfoCard from "@/components/home/hero/PersonInfoCard";
-import { TrendingUp, ArrowUpRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import Icon from "@/components/ui/Icon";
 import instagram from '@/assets/Instagram.png'
@@ -14,14 +13,7 @@ import vector from '@/assets/Vector.png'
 import youtube from '@/assets/YouTube.png'
 import twitter from '@/assets/Twitter.png'
 import Image from "next/image";
-import left from "@/assets/left.svg"
-import right from "@/assets/right.svg"
-import mid from "@/assets/mid.png"
 import { motion, useAnimationControls } from "framer-motion";
-import samsungLogo from "@/assets/samsung-logo.png";
-import googleLogo from "@/assets/google-logo.webp";
-import boatLogo from "@/assets/boat-logo.svg";
-import lgLogo from "@/assets/lg-logo.png";
 import companyLogo1 from "@/assets/Companylogo1.svg"
 import companyLogo2 from "@/assets/Companylogo2.svg"
 import companyLogo3 from "@/assets/Companylogo3.svg"

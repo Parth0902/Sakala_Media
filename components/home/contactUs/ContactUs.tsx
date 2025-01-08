@@ -1,15 +1,9 @@
 "use client";
 import { useState } from "react";
-import Link from "next/link";
-import Socials from "@/components/footer/Socials";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
-import logo from "@/assets/Logo.png";
-import socials3d from "@/assets/socials3d.png";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import Gradient from "@/components/shared/Gradient";
 import youtube from "@/assets/YouTube.png"
 import pintrest from "@/assets/pinterest.svg"
 import twitch from "@/assets/twitch.svg"
