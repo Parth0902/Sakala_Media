@@ -1,10 +1,13 @@
 import QualitiesHighlights from "./QualitiesHighlights";
 import StatisticsSection from "./StatisticsSection";
 import "./About.css";
+import Gradient from "@/components/shared/Gradient";
 
 const About: React.FC = () => {
   return (
-    <div className="statistics-and-services">
+    <div className="statistics-and-services relative z-0">
+            <Gradient position="leftCenter" size={"large"} /> 
+            <Gradient position="topRight" size={"large"} /> 
       <StatisticsSection />
       <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
         <QualitiesHighlights

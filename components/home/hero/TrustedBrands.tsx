@@ -1,65 +1,102 @@
 "use client";
 
 import React, { useRef, useEffect, useState } from "react";
-import Image from "next/image";
 import { motion, useAnimationControls } from "framer-motion";
-import samsungLogo from "@/assets/samsung-logo.png";
-import googleLogo from "@/assets/google-logo.webp";
-import boatLogo from "@/assets/boat-logo.svg";
-import lgLogo from "@/assets/lg-logo.png";
+import Gradient from "@/components/shared/Gradient";
 
-const brandLogos = [
-  { src: samsungLogo, alt: "Samsung Logo" },
-  { src: googleLogo, alt: "Google Logo" },
-  { src: boatLogo, alt: "Boat Logo" },
-  { src: lgLogo, alt: "LG Logo" },
+const testimonials = [
+  {
+    name: "Mr. John Doe",
+    title: "X-Y-Z Store Owner",
+    content:
+      "Duis tempor mauris at ex dapibus, nec scelerisque dolor faucibus. Praesent vel turpis in erat gravida scelerisque. Aenean id lectus nec nisi aliquam finibus eget id metus.",
+  },
+  {
+    name: "Mrs. Martha Steen",
+    title: "X-Y-Z Store Owner",
+    content:
+      "Duis tempor mauris at ex dapibus, nec scelerisque dolor faucibus. Praesent vel turpis in erat gravida scelerisque. Aenean id lectus nec nisi aliquam finibus eget id metus.",
+  },
+  {
+    name: "Dr. David Fernand",
+    title: "X-Y-Z Store Owner",
+    content:
+      "Duis tempor mauris at ex dapibus, nec scelerisque dolor faucibus. Praesent vel turpis in erat gravida scelerisque. Aenean id lectus nec nisi aliquam finibus eget id metus.",
+  },
+  {
+    name: "Dr. David Fernand",
+    title: "X-Y-Z Store Owner",
+    content:
+      "Duis tempor mauris at ex dapibus, nec scelerisque dolor faucibus. Praesent vel turpis in erat gravida scelerisque. Aenean id lectus nec nisi aliquam finibus eget id metus.",
+  },
+  {
+    name: "Dr. David Fernand",
+    title: "X-Y-Z Store Owner",
+    content:
+      "Duis tempor mauris at ex dapibus, nec scelerisque dolor faucibus. Praesent vel turpis in erat gravida scelerisque. Aenean id lectus nec nisi aliquam finibus eget id metus.",
+  },
 ];
 
 const TrustedBrands = () => {
-  const [width, setWidth] = useState(0);
   const carousel = useRef<HTMLDivElement>(null);
   const controls = useAnimationControls();
+  const cardWidth = 420; // Fixed width for cards
+  const gap = 40; // Gap between cards
+  const totalWidth = (cardWidth + gap) * testimonials.length;
 
   useEffect(() => {
-    if (carousel.current) {
-      setWidth(carousel.current.scrollWidth / 2);
-    }
-  }, []);
-
-  useEffect(() => {
-    if (width > 0) {
-      controls.start({
-        x: [-width, 0],
-        transition: {
-          x: {
-            repeat: Infinity,
-            repeatType: "loop",
-            duration: 20,
-            ease: "linear",
-          },
+    controls.start({
+      x: [-totalWidth, 0],
+      transition: {
+        x: {
+          repeat: Infinity,
+          repeatType: "loop",
+          duration: 40,
+          ease: "linear",
         },
-      });
-    }
-  }, [width, controls]);
+      },
+    });
+  }, [totalWidth, controls]);
 
   return (
-    <div className="bg-white text-black">
-      <div className="px-4 lg:px-24 mx-auto container z-50 py-24 flex flex-col items-center justify-center gap-16">
-        <h2 className="text-4xl font-bold">Trusted By Industry Leaders</h2>
-        <div className="w-full overflow-hidden relative">
-          <div className="absolute left-0 top-0 w-32 h-full bg-gradient-to-r from-white to-transparent z-10"></div>
-          <div className="absolute right-0 top-0 w-32 h-full bg-gradient-to-l from-white to-transparent z-10"></div>
-          <motion.div ref={carousel} className="flex" animate={controls} style={{ width: `${width * 2}px` }}>
-            {[...brandLogos, ...brandLogos].map((logo, index) => (
-              <motion.div key={index} className="flex-shrink-0 w-[200px] mx-16 flex items-center justify-center">
-                <Image
-                  src={logo.src}
-                  alt={logo.alt}
-                  width={200}
-                  height={80}
-                  objectFit="contain"
-                  className="pointer-events-none"
-                />
+    <div className="relative">
+          <Gradient position="topRight" size={"large"} /> 
+          <Gradient position="topLeft" size={"large"} /> 
+      <div className="w-full z-50 py-24 flex flex-col items-center justify-center">
+        <h2 className="text-6xl font-bold text-white">
+          Here’s what Our Clients Have To Say
+        </h2>
+        <p className="text-base text-white text-center py-8 lg:w-9/12">
+          At Skala, our clients are at the heart of everything we do. We believe
+          in building strong, lasting partnerships by delivering personalized
+          solutions that truly meet their needs. Your success is our success,
+          and we’re committed to going above and beyond to ensure your goals
+          are not just met, but exceeded.
+        </p>
+        <div className="w-full overflow-hidden relative flex">
+          <motion.div
+            ref={carousel}
+            className="flex gap-[40px]"
+            animate={controls}
+            style={{ width: "max-content" }}
+          >
+            {[...testimonials, ...testimonials].map((testimonial, index) => (
+              <motion.div
+                key={index}
+                className="rounded-[24px] border border-white bg-[rgba(21,21,21,0.4)] backdrop-blur-[15px] p-[25px] w-[420px] py-[40px]"
+              >
+                <div className="flex gap-3">
+                  <div className="h-12 w-12 bg-white rounded-full"></div>
+                  <div>
+                    <h4 className="text-white text-base font-bold text-start">
+                      {testimonial.name}
+                    </h4>
+                    <p className="text-white text-xs font-medium text-start">
+                      {testimonial.title}
+                    </p>
+                  </div>
+                </div>
+                <p className="pt-4 text-white">{testimonial.content}</p>
               </motion.div>
             ))}
           </motion.div>

@@ -1,6 +1,6 @@
 const ServiceHeader: React.FC = () => {
   return (
-    <div className="header-section">
+    <div className="header-section pt-10">
       <h1>Your Partners in Marketing & Web Technology Solutions</h1>
       <p>
         At Skala Media, we synergize cutting-edge technology with dynamic marketing strategies to elevate your brand in

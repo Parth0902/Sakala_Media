@@ -1,5 +1,6 @@
 import AnimatedNumber, { NumberMetaData } from "@/components/shared/AnimatedNumber";
-
+import Image from "next/image";
+import border from '@/assets/border.svg'
 interface StatisticsSectionProps {
   title?: string;
   subtitle?: string;
@@ -32,18 +33,26 @@ const StatisticsSection: React.FC<StatisticsSectionProps> = ({
   },
 }) => {
   return (
-    <div className="statistics-section">
+    <div className="statistics-section w-full ">
+
       <h1 className="main-title">{title}</h1>
       <p className="subtitle">{subtitle}</p>
-
-      <div className="statistics-container">
-        <StatisticItem numberMetData={statistics.activeClients} label="ACTIVE CLIENTS" />
-        <StatisticItem numberMetData={statistics.adAccounts} label="AD ACCOUNTS SHARED" />
-        <StatisticItem numberMetData={statistics.adSpend} label="ADVERTISING SPEND" />
+     
+      <div className="relative w-full flex justify-center">
+        <div className="statistics-container">
+          <StatisticItem numberMetData={statistics.activeClients} label="ACTIVE CLIENTS" />
+          <StatisticItem numberMetData={statistics.adAccounts} label="AD ACCOUNTS SHARED" />
+          <StatisticItem numberMetData={statistics.adSpend} label="ADVERTISING SPEND" />
+        </div>
+        <Image src={border} className="absolute top-[29%] w-[90%] 2xl:w-[80%] " alt="img"></Image>
       </div>
 
-      <h2 className="secondary-title">Why Clients Love Our Service</h2>
-      <p className="description">{description}</p>
+   
+         
+    
+
+      <h2 className="secondary-title pt-[100px] 2xl:[120px]">Why Clients Love Our Service</h2>
+      <p className="description py-[50px]">{description}</p>
     </div>
   );
 };

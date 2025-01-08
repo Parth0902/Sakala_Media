@@ -1,9 +1,11 @@
 import Image from "next/image";
 import founderImage from "@/assets/founder.png";
+import Gradient from "../shared/Gradient";
 
 export default function FoundersMessage() {
   return (
-    <div className="w-full">
+    <div className="w-full relative">
+         <Gradient position="topRight" size={"large"} /> 
       {/* Founder Message Section */}
       <section className="mx-auto px-4 lg:px-24 py-12 flex flex-col items-center lg:flex-row lg:justify-center gap-32">
         <div className="w-full max-w-md mx-auto lg:mx-0">

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import Gradient from "@/components/shared/Gradient";
 import PersonInfoCard from "@/components/home/hero/PersonInfoCard";
@@ -14,28 +14,66 @@ import vector from '@/assets/Vector.png'
 import youtube from '@/assets/YouTube.png'
 import twitter from '@/assets/Twitter.png'
 import Image from "next/image";
-import left from "@/assets/left.png"
-import right from "@/assets/right.png"
+import left from "@/assets/left.svg"
+import right from "@/assets/right.svg"
 import mid from "@/assets/mid.png"
+import { motion, useAnimationControls } from "framer-motion";
+import samsungLogo from "@/assets/samsung-logo.png";
+import googleLogo from "@/assets/google-logo.webp";
+import boatLogo from "@/assets/boat-logo.svg";
+import lgLogo from "@/assets/lg-logo.png";
+import companyLogo1 from "@/assets/Companylogo1.svg"
+import companyLogo2 from "@/assets/Companylogo2.svg"
+import companyLogo3 from "@/assets/Companylogo3.svg"
+import companyLogo4 from "@/assets/Companylogo4.svg"
+import companyLogo5 from "@/assets/Companylogo5.svg"
+const brandLogos = [
+  { src: companyLogo1, alt: "companyLogo1" },
+  { src: companyLogo2, alt: "Google Logo" },
+  { src: companyLogo3, alt: "Boat Logo" },
+  { src: companyLogo4, alt: "LG Logo" },
+  { src: companyLogo5, alt: "LG Logo" },
+];
 
 export default function Hero() {
-  return (
-      <div className=" hero_background">
-        <div className="absolute w-full top-0 flex justify-center">
-          <Image src={mid} alt="gradient"></Image>
-        </div>
-        <div className="absolute left-0 bottom-0">
-          <Image src={left} alt="gradient"></Image>
-        </div>
-        <div className="absolute right-0 bottom-0">
-          <Image src={right} alt="gradient"></Image>
-        </div>
+  const [width, setWidth] = useState(0);
+    const carousel = useRef<HTMLDivElement>(null);
+    const controls = useAnimationControls();
+  
+    useEffect(() => {
+      if (carousel.current) {
+        setWidth(carousel.current.scrollWidth / 2);
+      }
+    }, []);
+  
+    useEffect(() => {
+      if (width > 0) {
+        controls.start({
+          x: [-width, 0],
+          transition: {
+            x: {
+              repeat: Infinity,
+              repeatType: "loop",
+              duration: 20,
+              ease: "linear",
+            },
+          },
+        });
+      }
+    }, [width, controls]);
 
-        <main className={"w-full flex justify-between mx-auto container z-10 pb-52 "}>
+  return (
+      <div className="hero_background">
+
+        <Gradient position="bottomLeft" size={"large"} /> 
+        <Gradient position="bottomRight" size={"large"} /> 
+        <Gradient position="center" size={"large"} /> 
+  
+
+        <main className={"w-full flex justify-between mx-auto container z-10 pb-40 "}>
           <div className="w-full flex justify-center gap-3 pt-24">
             <div className="flex flex-col gap-7">
               <Icon img={instagram} />
-
               <div className="relative right-20 flex flex-col gap-10">
                 <Icon img={facebook} />
                 <Icon img={vector} />
@@ -81,10 +119,32 @@ export default function Hero() {
             </div>
           </div>  
         </main>
-          <div className=" bg-[rgba(52,97,255,0.2)] h-[140px] rotate-2">
+        
+        <div className="flex items-center overflow-hidden h-[300px] relative">
+            <div className=" bg-[rgba(52,97,255,0.2)] h-[136px] rotate-2 w-full absolute">
             
+            </div>
+                <div className=" bg-[#3461FF] h-[136px] reverse_rotate mt-5 flex items-center overflow-hidden ">
+                  <motion.div ref={carousel} className="flex" animate={controls} style={{ width: `${width * 2}px` }}>
+                      {[...brandLogos, ...brandLogos].map((logo, index) => (
+                        <motion.div key={index} className="flex-shrink-0 w-[200px] mx-16 flex items-center justify-center">
+                          <Image
+                            src={logo.src}
+                            alt={logo.alt}
+                            width={100}
+                            height={40}
+                            objectFit="contain"
+                            className="pointer-events-none"
+                          />
+                        </motion.div>
+                      ))}
+                  </motion.div>
+               
+              </div>
+        </div>
 
-          </div>
+
+          
 
    
       </div>

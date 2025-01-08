@@ -3,7 +3,7 @@ import { cva, VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 // Define gradient variants with correct pizza slice shapes for each corner
-const gradientVariants = cva("w-full h-full pointer-events-none absolute z-0 block aspect-square", {
+const gradientVariants = cva("w-full h-full pointer-events-none absolute block aspect-square Z-0", {
   variants: {
     position: {
       topLeft: "top-0 left-0",
@@ -28,14 +28,18 @@ const gradientVariants = cva("w-full h-full pointer-events-none absolute z-0 blo
       ghost: "bg-gradient-to-br from-gray-300 to-gray-500 opacity-30",
     },
     blur: {
-      small: "blur-[50px]",
-      medium: "blur-[100px]",
-      large: "blur-[180px]",
+      small: "blur-[150px]",
+      medium: "blur-[150px]",
+      large: "blur-[150px]",
     },
     shape: {
       circle: "rounded-full", // Default circular shape
       slice: "", // Dynamic slice shape based on position (defined per position)
     },
+    // layer: {
+    //   front: "z-10", // Default z-index
+    //   back: "z-0", // Lower z-index
+    // },
   },
   compoundVariants: [
     {
@@ -65,6 +69,7 @@ const gradientVariants = cva("w-full h-full pointer-events-none absolute z-0 blo
     size: "medium",
     blur: "large",
     shape: "circle",
+    // layer: "front",
   },
 });
 
@@ -72,7 +77,7 @@ interface IGradientProps extends VariantProps<typeof gradientVariants> {
   className?: string;
 }
 
-// Gradient component with pizza slice shape for corners
+// Gradient component with pizza slice shape for corners and layer control
 const Gradient = ({ position, variant, size, blur, shape, className }: IGradientProps) => {
   return <figure className={cn(gradientVariants({ position, variant, size, blur, shape, className }))}></figure>;
 };

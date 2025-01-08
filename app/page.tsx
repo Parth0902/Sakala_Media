@@ -2,11 +2,12 @@
 import { useEffect } from "react";
 
 import Hero from "@/components/home/hero/Hero";
+import Lenis from "lenis";
 import TrustedBrands from "@/components/home/hero/TrustedBrands";
 import OurServices from "@/components/home/services/OurServices";
-import Lenis from "lenis";
 import FoundersMessage from "@/components/home/FoundersMessage";
 import About from "@/components/home/why-us/About";
+import ContactUs from "@/components/home/contactUs/ContactUs";
 
 export default function Home() {
   useEffect(() => {
@@ -27,6 +28,7 @@ export default function Home() {
       <About />
       <FoundersMessage />
       <TrustedBrands />
+      <ContactUs/>
     </div>
   );
 }
