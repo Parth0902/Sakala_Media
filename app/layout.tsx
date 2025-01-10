@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${helvetica.variable} antialiased min-h-screen flex flex-col`}>
-        <div className="absolute right-0 top-0">
+        <div className="lg:absolute right-0 top-0 hidden">
           <Image src={gradient} alt="gradient"></Image>
         </div>
         <Navbar />

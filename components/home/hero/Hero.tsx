@@ -62,9 +62,19 @@ export default function Hero() {
         <Gradient position="center" size={"large"} /> 
   
 
-        <main className={"w-full flex justify-between mx-auto container z-10 pb-40 "}>
-          <div className="w-full flex justify-center gap-3 pt-24">
-            <div className="flex flex-col gap-7">
+        <main className={"w-full flex justify-between mx-auto container z-10 pb-14 lg:pb-40 "}>
+          <div className="w-full flex flex-col lg:flex-row justify-center gap-3 pt-16 lg:pt-24 items-center">
+            <div className="w-full flex gap-4 lg:gap-7 justify-center  md:hidden">
+                <Icon img={behance} />
+                <Icon img={instagram} />
+                <Icon img={facebook} />
+                <Icon img={youtube} />
+                <Icon img={twitter} />
+                <Icon img={linkdin} />
+                <Icon img={dribble} />
+            </div>
+
+            <div className="hidden lg:flex flex-col gap-7">
               <Icon img={instagram} />
               <div className="relative right-20 flex flex-col gap-10">
                 <Icon img={facebook} />
@@ -74,8 +84,8 @@ export default function Hero() {
             </div>
 
 
-            <div className={"z-49 flex flex-col gap-4 text-center pt-24"}>
-              <h1 className={"z-50 text-7xl font-bold flex flex-col"}>
+            <div className={"z-49 flex flex-col gap-4 text-center pt-12 lg:pt-24 justify-center items-center "}>
+              <h1 className={"z-50 text-5xl lg:text-7xl font-bold flex flex-col"}>
                 <p>
                   We <span className={"text-primary-light italic"}>Consult</span> and
                 </p>
@@ -83,7 +93,7 @@ export default function Hero() {
                   <span className={"text-primary-light italic"}>Scale </span>Companies
                 </p>
               </h1>
-              <p className={"z-50 text-white w-[680px]"}>
+              <p className={"z-50 text-white text-base text-center w-[348px] lg:w-[680px] pb-5"}>
                 Unlock your {"brand's"} true potential with our seamless blend of cutting-edge marketing strategies and
                 innovative tech solutions. Elevate your business to new heights through our integrated approach, driving
                 growth and excellence.
@@ -101,7 +111,7 @@ export default function Hero() {
               </Link>
             </div>
 
-            <div className="flex flex-col gap-7">
+            <div className="hidden lg:flex flex-col gap-7">
               <Icon img={behance} />
               <div className="relative left-20 flex flex-col gap-10">
                 <Icon img={linkdin} />

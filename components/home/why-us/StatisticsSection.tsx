@@ -39,7 +39,7 @@ const StatisticsSection: React.FC<StatisticsSectionProps> = ({
       <p className="subtitle">{subtitle}</p>
      
       <div className="relative w-full flex justify-center">
-        <div className="statistics-container">
+        <div className="flex flex-col lg:flex-row justify-center w-full mx-[40px] gap-[100px] p-5">
           <StatisticItem numberMetData={statistics.activeClients} label="ACTIVE CLIENTS" />
           <StatisticItem numberMetData={statistics.adAccounts} label="AD ACCOUNTS SHARED" />
           <StatisticItem numberMetData={statistics.adSpend} label="ADVERTISING SPEND" />
