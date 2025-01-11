@@ -108,13 +108,7 @@ html.lenis body {
   background: rgba(26, 26, 26, 0.40);
 }
 
-.contact-us-heading{
-  font-family: 'Satoshi', sans-serif;
-  font-size: 68px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 75px; /* 110.294% */
-}
+
 .conctact_icon_box{
   border-radius: 12px;
   border: 0.8px solid rgba(216, 216, 216, 0.05);

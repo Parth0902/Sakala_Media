@@ -5,7 +5,7 @@ import Gradient from "@/components/shared/Gradient";
 
 const About: React.FC = () => {
   return (
-    <div className="statistics-and-services relative z-0">
+    <div className="flex flex-col items-center bg-[#000000] relative z-0">
             <Gradient position="leftCenter" size={"large"} /> 
             <Gradient position="topRight" size={"large"} /> 
       <StatisticsSection />

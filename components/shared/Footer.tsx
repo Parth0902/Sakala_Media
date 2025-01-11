@@ -9,7 +9,7 @@ import Gradient from "./Gradient";
 const Footer = () => {
   return (
     <div className="mt-auto overflow-hidden z-0">
-      <footer className=" pt-[200px] bg-[#020103] py-12 relative">
+      <footer className=" lg:pt-[200px] bg-[#020103] py-12 relative">
         <Gradient
           size={"large"}
           position={"bottomCenter"}

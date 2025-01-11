@@ -8,7 +8,7 @@ export interface NumberMetaData {
 
 const AnimatedNumber: React.FC<{ number: number }> = ({ number }) => {
   const displayValue = useNumberAnimation(number);
-  return <p className="text-6xl text-primary-light">{displayValue}</p>;
+  return <p className="plus">{displayValue}</p>;
 };
 
 export default AnimatedNumber;

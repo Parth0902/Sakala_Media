@@ -12,14 +12,14 @@ const QualitiesHighlights: React.FC<QualitiesHighlightsProps> = ({
   backgroundColor = "#151515",
 }) => {
   return (
-    <div className="service-highlights" style={{ backgroundColor }}>
+    <div className="service-highlights h-[300px] lg:h-[350px]" style={{ backgroundColor }}>
       <div className="background-image"></div>
       <div className="service-highlights-container">
         <div className="icon-container">
           <img src={iconSrc} alt="Service Icon" className="service-icon" />
         </div>
-        <h2 className="title">{title}</h2>
-        <p className="description">{description}</p>
+        <h2 className="text-center text-[#ffffff] font-bold text-3xl lg:text-4xl title">{title}</h2>
+        <p className="text-sm text-center font-medium leading-7 ">{description}</p>
       </div>
     </div>
   );

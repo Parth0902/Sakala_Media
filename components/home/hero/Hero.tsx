@@ -122,7 +122,7 @@ export default function Hero() {
           </div>  
         </main>
         
-        <div className="flex items-center overflow-hidden h-[300px] relative">
+        <div className="flex items-center overflow-hidden h-[200px] lg:h-[290px] relative">
             <div className=" bg-[rgba(52,97,255,0.2)] h-[136px] rotate-2 w-full absolute">
             
             </div>

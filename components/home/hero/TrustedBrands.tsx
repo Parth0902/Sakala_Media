@@ -59,14 +59,22 @@ const TrustedBrands = () => {
   }, [totalWidth, controls]);
 
   return (
-    <div className="relative">
+    <div className="relative overflow-hidden">
           <Gradient position="topRight" size={"large"} /> 
           <Gradient position="topLeft" size={"large"} /> 
+          <div className="lg:hidden w-[641px] h-[350px] flex-shrink-0 bg-[#051D72] blur-[100px] absolute z-[-1] left-[130px] top-[20%] rounded-full"></div>
+
       <div className="w-full z-50 py-24 flex flex-col items-center justify-center">
-        <h2 className="text-6xl font-bold text-white">
+        <h2 className="hidden lg:block text-[28px] lg:text-6xl font-bold text-white">
           Here’s what Our Clients Have To Say
         </h2>
-        <p className="text-base text-white text-center py-8 lg:w-9/12">
+        <h2 className="lg:hidden text-[28px] lg:text-6xl font-bold text-white">
+             Here’s what 
+        </h2>
+        <h2 className="lg:hidden text-[28px] lg:text-6xl font-bold text-white">
+             Our Clients Have To Say
+        </h2>
+        <p className="text-base text-white text-center py-8 lg:w-9/12 leading-7">
           At Skala, our clients are at the heart of everything we do. We believe
           in building strong, lasting partnerships by delivering personalized
           solutions that truly meet their needs. Your success is our success,

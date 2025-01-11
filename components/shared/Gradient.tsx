@@ -3,7 +3,7 @@ import { cva, VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 // Define gradient variants with correct pizza slice shapes for each corner
-const gradientVariants = cva("w-full h-full pointer-events-none absolute block aspect-square Z-0", {
+const gradientVariants = cva("w-full h-full pointer-events-none absolute hidden lg:block aspect-square Z-0", {
   variants: {
     position: {
       topLeft: "top-0 left-0",
