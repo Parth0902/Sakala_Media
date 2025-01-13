@@ -4,7 +4,7 @@ import ServiceCard, { ServiceCardProps } from "./ServiceCard";
 import Gradient from "@/components/shared/Gradient";
 const HeaderSection: React.FC = () => {
   return (
-    <section className="text-center pb-8 ">
+    <section className="text-center pb-8 " id="services">
       <h1 className="z-10 self-center mt-10 text-7xl lg:font-bold font-medium text-white leading-[75px] max-md:max-w-full max-md:text-3xl max-md:leading-[49px]">
         Your Partners in Marketing &<br />
         Web Technology Solutions

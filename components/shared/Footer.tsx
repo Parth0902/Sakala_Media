@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import Socials from "@/components/footer/Socials";
+import Socials from "@/components/footer/FooterSocials";
 import Image from "next/image";
 import logo from "@/assets/Logo.png";
 import Gradient from "./Gradient";

@@ -19,6 +19,8 @@ import companyLogo2 from "@/assets/Companylogo2.svg"
 import companyLogo3 from "@/assets/Companylogo3.svg"
 import companyLogo4 from "@/assets/Companylogo4.svg"
 import companyLogo5 from "@/assets/Companylogo5.svg"
+import gradient from "@/assets/Ellipse.png";
+
 const brandLogos = [
   { src: companyLogo1, alt: "companyLogo1" },
   { src: companyLogo2, alt: "Google Logo" },
@@ -56,7 +58,9 @@ export default function Hero() {
 
   return (
       <div className="hero_background">
-
+         <div className="lg:absolute right-0 top-0 hidden lg:block">
+                  <Image src={gradient} alt="gradient"></Image>
+          </div>
         <Gradient position="bottomLeft" size={"large"} /> 
         <Gradient position="bottomRight" size={"large"} /> 
         <Gradient position="center" size={"large"} /> 

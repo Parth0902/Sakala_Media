@@ -3,13 +3,17 @@ import React from "react";
 import ContactHeader from "@/components/contact/contactHeader";
 import ContactForm from "@/components/contact/contactForm";
 import ContactInfo from "@/components/contact/contactInfo";
-
+import gradient from "@/assets/Ellipse_contact.png";
+import Image from "next/image";
 // import styles from "@/components/Contact.module.css";
 
 const Contact = () => {
   return (
-    <div className={"min-h-screen bg-white"}>
-      <main className="container mx-auto px-4 py-12">
+    <div className={"min-h-screen bg-[#020103] z-10 overflow-hidden"}>
+      <main className="container mx-auto px-4 py-12 ">
+          <div className="lg:absolute right-0 top-0 hidden lg:block">
+              <Image src={gradient} alt="gradient"></Image>
+          </div>
         <ContactHeader />
         <ContactInfo />
         <ContactForm />

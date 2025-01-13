@@ -4,7 +4,7 @@ import "./globals.css";
 import Footer from "@/components/shared/Footer";
 import Navbar from "@/components/shared/Navbar";
 import Image from "next/image";
-import gradient from "@/assets/Ellipse.png";
+
 
 const helvetica = localFont({
   src: "./fonts/Helvetica.ttf",
@@ -24,10 +24,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${helvetica.variable} antialiased min-h-screen flex flex-col`}>
-        <div className="lg:absolute right-0 top-0 hidden">
-          <Image src={gradient} alt="gradient"></Image>
-        </div>
+      <body className={`${helvetica.variable} antialiased min-h-screen flex flex-col `}>
+       
         <Navbar />
         {children}
         <Footer />
