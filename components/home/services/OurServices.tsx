@@ -51,10 +51,12 @@ const services: ServiceCardProps[] = [
 
 const OurServices: React.FC = () => {
   return (
-    <main className="flex flex-col items-center px-5 lg:px-24 pt-24 lg:pt-48 main-container relative pb-20 lg:pb-40 z-10">
+    <main className="flex flex-col items-center px-5 lg:px-24 pt-24 lg:pt-48 main-container relative  lg:pb-40 z-10">
       <Gradient position="bottomLeft" size={"large"} /> 
       <Gradient position="bottomRight" size={"large"} /> 
       <Gradient position="topRight" size={"large"} /> 
+      <div className="w-[600px] h-[217px] top-[8.5rem] flex-shrink-0 bg-[#093EFCCC] blur-[120px] absolute  left-[-350px] z-[-1] lg:hidden "></div>
+
       
        <h4 className="text-center text-[#CCD6E0]  text-lg">OUR SERVICES</h4>
       <HeaderSection />

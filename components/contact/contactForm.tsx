@@ -26,15 +26,16 @@ const ContactForm = () => {
     // Here you would typically send the form data to your backend
   };
   return (
-    <section className={"container mx-auto px-4 lg:px-24 flex flex-col items-center justify-center pt-16"}>
-      <h2 className="text-4xl font-bold mb-4 text-white">Fill The Form To Write To Us</h2>
-      <p className="text-white  text-center">
+    <section className={"container mx-auto px-4 lg:px-24 flex flex-col items-center justify-center lg:pt-16 relative"}>
+      <div className="w-[600px] h-[217px] top-[8.5rem] flex-shrink-0 bg-[#093EFCCC] blur-[120px] absolute  left-[-350px] z-[-1] "></div>
+      <h2 className="text-2xl lg:text-4xl font-bold mb-4 text-white">Fill The Form To Write To Us</h2>
+      <p className="text-white  text-center text-[14px] lg:text-base pt-4 leading-7">
         Over The <span className="italic text-[#3461FF]"> Lasy 4 years</span>, Skala Has Thrived, Delivering Exceptional Results For Over <span className="italic text-[#3461FF]">3,000 Clients</span>. 
       </p>
-      <p className="text-white mb-10  text-center">
+      <p className="text-white mb-10  text-center text-[14px] lg:text-base pt-4 leading-7">
         Our Commitment To Innovation And Excellence Has Solidified Our Reputation As A Trusted Partner In Their Success.
       </p>
-      <form onSubmit={handleSubmit} className="z-50 relative w-full bg-[#1a1a1a7e] p-12 rounded-3xl py-20 px-14 overflow-hidden ">
+      <form onSubmit={handleSubmit} className="z-50 relative w-full bg-[#1a1a1a7e] p-12 rounded-3xl lg:py-20 lg:px-14 overflow-hidden ">
         {/* <Gradient position="center" size={"large"} /> */}
         <div className="w-[648.788px] h-[442.831px] flex-shrink-0 bg-[#3461FF] blur-[200px] absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[-1]"></div>
         <div className="z-50 grid grid-cols-1 md:grid-cols-2 gap-12">

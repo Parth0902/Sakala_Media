@@ -28,7 +28,7 @@ const socials = [
 
 export default function Socials() {
   return (
-    <div className="flex space-x-4 absolute top-14 right-10">
+    <div className="flex space-x-4 lg:absolute lg:top-14 lg:right-10">
       {socials.map((socialMedia) => {
         return (
           <Link href={socialMedia.link} key={socialMedia.name}>

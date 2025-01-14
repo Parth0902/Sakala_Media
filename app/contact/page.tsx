@@ -10,8 +10,8 @@ import Image from "next/image";
 const Contact = () => {
   return (
     <div className={"min-h-screen bg-[#020103] z-10 overflow-hidden"}>
-      <main className="container mx-auto px-4 py-12 ">
-          <div className="lg:absolute right-0 top-0 hidden lg:block">
+      <main className="container mx-auto px-4 lg:py-12 py-5 ">
+          <div className="absolute right-0 top-0 lg:block">
               <Image src={gradient} alt="gradient"></Image>
           </div>
         <ContactHeader />
