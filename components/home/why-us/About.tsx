@@ -5,9 +5,9 @@ import Gradient from "@/components/shared/Gradient";
 
 const About: React.FC = () => {
   return (
-    <div className="flex flex-col items-center bg-[#000000] relative z-0 overflow-x-hidden pt-20 pb-20">
+    <div className="flex flex-col items-center bg-[#000000] relative z-0 overflow-x-hidden lg:overflow-auto pt-20 pb-20">
             <Gradient position="leftCenter" size={"large"} /> 
-            <Gradient position="topRight" size={"large"} /> 
+            {/* <Gradient position="topRight" size={"large"} />  */}
             {/* <div className="w-[600px] h-[217px] top-[8.5rem] flex-shrink-0 bg-[#093EFCCC] blur-[120px] absolute  left-[150px] z-[-1] "></div> */}
             <div className="w-[600px] h-[317px] top-[40.5rem] flex-shrink-0 bg-[#093EFCCC] blur-[120px] absolute  right-[50px] z-[-1] lg:hidden"></div>
             <div className="w-[600px] h-[317px] top-[6.5rem] flex-shrink-0 bg-[#093EFCCC] blur-[120px] absolute  left-[150px] z-[-1] lg:hidden"></div>

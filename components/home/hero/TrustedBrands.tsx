@@ -59,10 +59,10 @@ const TrustedBrands = () => {
   }, [totalWidth, controls]);
 
   return (
-    <div className="relative overflow-hidden">
-          <Gradient position="topRight" size={"large"} /> 
-          <Gradient position="topLeft" size={"large"} /> 
-          <div className="lg:hidden w-[641px] h-[350px] flex-shrink-0 bg-[#051D72] blur-[100px] absolute z-[-1] left-[130px] top-[20%] rounded-full"></div>
+    <div className="relative  z-0">
+          <Gradient position="bottomLeft" size={"large"} /> 
+          <Gradient position="bottomRight" size={"large"} /> 
+          <div className="lg:hidden w-[641px] h-[350px] flex-shrink-0 bg-[#051D72] blur-[100px] absolute z-[-1] left-[130px] top-[20%] rounded-full lg:top-[450px]"></div>
 
       <div className="w-full z-50 py-24 flex flex-col items-center justify-center">
       <h4 className="text-center text-[#CCD6E0]  text-lg pb-4">TESTIMONIALS</h4>
