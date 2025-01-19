@@ -59,7 +59,7 @@ const TrustedBrands = () => {
   }, [totalWidth, controls]);
 
   return (
-    <div className="relative  z-0">
+    <div className="relative overflow-hidden lg:overflow-visible z-0 lg:pb-20">
           <Gradient position="bottomLeft" size={"large"} /> 
           <Gradient position="bottomRight" size={"large"} /> 
           <div className="lg:hidden w-[641px] h-[350px] flex-shrink-0 bg-[#051D72] blur-[100px] absolute z-[-1] left-[130px] top-[20%] rounded-full lg:top-[450px]"></div>
