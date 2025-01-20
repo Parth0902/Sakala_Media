@@ -7,7 +7,7 @@ export default function FoundersMessage() {
     <div className="w-full relative">
          <Gradient position="topRight" size={"large"} /> 
       {/* Founder Message Section */}
-      <section className="justify-center lg:px-24 flex flex-col items-center lg:flex-row lg:justify-center lg:gap-32 ">
+      <section className="justify-center lg:px-24 flex flex-col items-center xl:flex-row lg:justify-center lg:gap-32 ">
         <div className=" max-w-md mx-auto lg:mx-0 w-[381px] h-[508px] lg:w-[400px] lg:h-[600px] bg-[#000] border-2 border-[#6B8BFF] rounded-2xl relative">
            <div className="absolute bg-[#6B8BFF] blur-[30px] w-[381px] h-[260px] rounded-2xl"></div>
           <Image src={founderImage} alt="Founder"  className="rounded-2xl object-cover w-[381px] h-[508px] lg:w-[400px] lg:h-[600px] relative right-2 top-2" />

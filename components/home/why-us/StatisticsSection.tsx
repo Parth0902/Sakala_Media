@@ -65,13 +65,13 @@ const StatisticsSection: React.FC<StatisticsSectionProps> = ({
         />
       </div>
 
-      <h2 className="text-[#FFF] text-center text-2xl font-bold lg:font-[68px] secondary-title pt-[110px]">
+      <h2 className="text-[#FFF] text-center text-2xl font-bold lg:text-[68px] secondary-title pt-[110px] lg:pt-[200px]">
         Why Clients Love Our Service
       </h2>
-      <p className="text-sm text-center font-medium description px-[35px] pt-1 lg:py-[50px]">
+      <p className="text-sm text-center font-medium description px-[35px] pt-1 lg:pt-[50px] lg:text-base">
         {description}
       </p>
-      <p className="text-sm text-center font-medium description px-[35px] pt-1 pb-[50px] lg:py-[50px]">
+      <p className="text-sm text-center font-medium description px-[35px] pt-1 pb-[10px] lg:pb-[70px] lg:text-base">
         {description2}
       </p>
     </div>

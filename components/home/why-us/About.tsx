@@ -14,7 +14,7 @@ const About: React.FC = () => {
             <div className="w-[300px] h-[217px] bottom-0 flex-shrink-0 bg-[#093EFCCC] blur-[150px] absolute  right-[-250px] z-[-1] lg:hidden"></div>
 
       <StatisticsSection />
-      <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
+      <div className="flex flex-col xl:flex-row items-center justify-center gap-8">
         <QualitiesHighlights
           title="Quick On-Boarding"
           description="At Skala, we make on-boarding fast and simple. We'll walk you through the process and get you on the path to success quickly. Unlock the full potential of your brand with our help."
