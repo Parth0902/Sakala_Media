@@ -6,13 +6,11 @@ const HeaderSection: React.FC = () => {
   return (
     <section className="text-center pb-8 " id="services">
       <h1 className="z-10 self-center mt-10 text-7xl lg:font-bold font-medium text-white leading-[75px] max-md:max-w-full max-md:text-3xl max-md:leading-[49px]">
-        Your Partners in Marketing &<br />
-        Web Technology Solutions
+          Turning Clicks Into Customers,<br /> 
+          Brands Into Market Leaders
       </h1>
       <p className="z-10 self-center mt-10 text-base leading-7 text-white max-md:max-w-full">
-        At Skala Media, we synergize cutting-edge technology with dynamic marketing strategies to elevate your brand in
-        the digital domain. Our dual expertise in web tech innovation and tailored marketing solutions is designed to
-        offer you a competitive edge.
+        Your brand deserves more than generic marketing. Our custom strategies are built to maximize ROI, optimize every touchpoint, and deliver sustainable growth.
       </p>
     </section>
   );
@@ -21,30 +19,30 @@ const HeaderSection: React.FC = () => {
 const services: ServiceCardProps[] = [
   {
     number: "01",
-    title: "Tailored Digital Platforms",
+    title: "Performance Marketing",
     description:
-      "From bespoke websites that embody your brand ethos to innovative applications, our custom solutions are meticulously architected to ensure they meet your business needs while providing an exceptional user experience.",
+      "We are a performance-focused media buying agency helping brands scale profitably across Meta, TikTok, Google, Snapchat, Bing, and more. We specialize in high-growth sectors like e-commerce, dropshipping, and affiliate marketing, delivering strategic ad buying that maximizes ROI.",
     bgColor: "blue",
   },
   {
     number: "02",
-    title: "Data-Driven Design & Development",
+    title: "Email Marketing",
     description:
-      "We infuse data intelligence and human-centered design principles to create intuitive interfaces that not only captivate but convert, driving your digital success.",
+      "We infuse AI data intelligence and human-centered design principles to create intuitive email campaigns. Our high-converting automation strategies drive 30-40% more revenue, boost retention, and maximize customer lifetime value.",
     bgColor: "black",
   },
   {
     number: "03",
-    title: "Precision-Targeted Advertising",
+    title: "Search Engine Optimization",
     description:
-      "Harness the power of data with our specialized approach to Facebook and Google Ads marketing, ensuring your message reaches and resonates with your desired audience.",
+      "We optimize your website, increase search rankings, and drive high-intent organic traffic that converts. Get found where it matters.",
     bgColor: "black",
   },
   {
     number: "04",
-    title: "Programmatic Buying & Social Engagement",
+    title: "User-Generated Content",
     description:
-      "Advance your advertising efficiency with our expert programmatic media buying and engage customers through compelling social media strategies that amplify your brand's presence.",
+      "Today’s consumers trust real people, not just ads. We create authentic, high-performing UGC content that builds trust and skyrockets your conversions.",
     bgColor: "blue",
   },
 ];

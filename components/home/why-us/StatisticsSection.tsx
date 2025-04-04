@@ -32,9 +32,9 @@ const StatisticsSection: React.FC<StatisticsSectionProps> = ({
   description = "Over the last 4 years, Skala has thrived, delivering exceptional results for over 3,000 clients.",
   description2 = "Our commitment to innovation and excellence has solidified our reputation as a trusted partner in their success.",
   statistics = {
-    activeClients: { number: 800, suffix: "+" },
-    adAccounts: { number: 3600, suffix: "+" },
-    adSpend: { number: 10, prefix: "$", suffix: "M+" },
+    activeClients: { number: 150, suffix: "+" },
+    adAccounts: { number: 10, suffix: "B+" },
+    adSpend: { number: 0, prefix: "$", suffix: "M+" },
   },
 }) => {
   return (
@@ -50,8 +50,8 @@ const StatisticsSection: React.FC<StatisticsSectionProps> = ({
       <div className="relative w-full flex justify-center pt-10">
         <div className="flex flex-col lg:flex-row justify-center w-full mx-[40px] gap-16 lg:gap-[100px] p-5">
           <StatisticItem numberMetData={statistics.activeClients} label="ACTIVE CLIENTS" />
-          <StatisticItem numberMetData={statistics.adAccounts} label="AD ACCOUNTS SHARED" />
-          <StatisticItem numberMetData={statistics.adSpend} label="ADVERTISING SPEND" />
+          <StatisticItem numberMetData={statistics.adAccounts} label="Impressions" />
+          <StatisticItem numberMetData={statistics.adSpend} label="Monthly Advertising Spend" />
         </div>
         <Image
           src={border}

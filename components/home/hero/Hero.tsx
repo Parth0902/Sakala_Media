@@ -5,13 +5,13 @@ import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import Icon from "@/components/ui/Icon";
 import instagram from '@/assets/Instagram.png'
-import behance from '@/assets/Behance.svg'
-import dribble from '@/assets/Dribbble.png'
+import snapChat from '@/assets/snapchat.svg'
 import facebook from '@/assets/facebook.png'
 import linkdin from '@/assets/LinkedIn.png'
-import vector from '@/assets/Vector.png'
-import youtube from '@/assets/YouTube.png'
-import twitter from '@/assets/Twitter.png'
+import googleAdds from '@/assets/googleAds.svg'
+import tikTok from '@/assets/tikTok.svg'
+import bing from '@/assets/bing.svg'
+import twitter from '@/assets/x.svg'
 import Image from "next/image";
 import { motion, useAnimationControls } from "framer-motion";
 import companyLogo1 from "@/assets/Companylogo1.svg"
@@ -63,7 +63,7 @@ export default function Hero() {
                   <Image src={gradient} alt="gradient"></Image>
           </div>
          <div className="absolute right-0 top-0  lg:hidden">
-                  <Image src={mobileBg} alt="gradient"></Image>
+                  <Image src={mobileBg} alt="gradient" ></Image>
           </div>
         <Gradient position="bottomLeft" size={"large"} /> 
         <Gradient position="bottomRight" size={"large"} /> 
@@ -72,23 +72,23 @@ export default function Hero() {
 
         <main className={"w-full flex justify-between mx-auto container z-10 pb-14 lg:pb-40 "}>
           <div className="w-full flex flex-col lg:flex-row justify-center gap-3 pt-16 lg:pt-24 items-center">
-            <div className="w-full flex gap-4 lg:gap-7 justify-center  md:hidden">
-                <Icon img={behance} />
+            <div className="w-full flex gap-4 lg:gap-7 justify-center  lg:hidden">
+                <Icon img={tikTok} />
                 <Icon img={instagram} />
                 <Icon img={facebook} />
-                <Icon img={youtube} />
+                <Icon img={bing} />
                 <Icon img={twitter} />
                 <Icon img={linkdin} />
-                <Icon img={dribble} />
+                <Icon img={snapChat} />
             </div>
 
             <div className="hidden lg:flex flex-col gap-7">
               <Icon img={instagram} />
               <div className="relative right-20 flex flex-col gap-10">
                 <Icon img={facebook} />
-                <Icon img={vector} />
+                <Icon img={googleAdds} />
               </div>
-              <Icon img={youtube} />
+              <Icon img={bing} />
             </div>
 
 
@@ -102,9 +102,7 @@ export default function Hero() {
                 </p>
               </h1>
               <p className={"z-50 text-white text-base text-center w-[348px] lg:w-[680px] pb-5"}>
-                Unlock your {"brand's"} true potential with our seamless blend of cutting-edge marketing strategies and
-                innovative tech solutions. Elevate your business to new heights through our integrated approach, driving
-                growth and excellence.
+              We help brands <strong>achieve exponential growth</strong> through data-driven marketing, strategic consulting, and impactful digital solutions. Whether you're looking to scale your ad performance, build a powerful online presence, or optimise your customer journey—we make it happen.
               </p>
               <Link href={"https://calendly.com/"} className="z-50">
                 <Button
@@ -120,10 +118,10 @@ export default function Hero() {
             </div>
 
             <div className="hidden lg:flex flex-col gap-7">
-              <Icon img={behance} />
+              <Icon img={tikTok} />
               <div className="relative left-20 flex flex-col gap-10">
                 <Icon img={linkdin} />
-                <Icon img={dribble} />
+                <Icon img={snapChat} />
               </div>
               <Icon img={twitter} />
             </div>
