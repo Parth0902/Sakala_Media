@@ -102,7 +102,7 @@ export default function Hero() {
                 </p>
               </h1>
               <p className={"z-50 text-white text-base text-center w-[348px] lg:w-[680px] pb-5"}>
-              We help brands <strong>achieve exponential growth</strong> through data-driven marketing, strategic consulting, and impactful digital solutions. Whether you're looking to scale your ad performance, build a powerful online presence, or optimise your customer journey—we make it happen.
+              We help brands achieve exponential growth through data-driven marketing, strategic consulting, and impactful digital solutions. Whether {"you're"} looking to scale your ad performance, build a powerful online presence, or optimise your customer journey—we make it happen.
               </p>
               <Link href={"https://calendly.com/"} className="z-50">
                 <Button
