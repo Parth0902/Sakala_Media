@@ -26,7 +26,7 @@ export default function Home() {
       <Hero />
       <OurServices />
       <About />
-      <FoundersMessage />
+      {/* <FoundersMessage /> */}
       <TrustedBrands />
       <ContactUs/>
     </div>

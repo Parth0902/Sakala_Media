@@ -6,8 +6,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import youtube from "@/assets/YouTube.png"
 import pintrest from "@/assets/pinterest.svg"
-import twitch from "@/assets/twitch.svg"
-import netflix from "@/assets/netflix.svg"
 import facebook from "@/assets/facebook.png"
 import instagram from "@/assets/Instagram.png"
 
@@ -43,21 +41,13 @@ const ContactUs = () => {
             </form>
            
         </div>
-        <div className=" w-full lg:flex justify-between pt-10 px-20 pb-10 hidden ">
+        <div className=" w-full lg:flex justify-evenly pt-10 px-20 pb-10 hidden ">
                         <div className="relative conctact_icon_box flex justify-center items-center icon_box_1">
                             <Image src={youtube} alt="icon" className="w-8 h-8"/>
                             <div className="icon_box_1_gradient"></div>
                         </div>
                         <div className="conctact_icon_box flex justify-center items-center icon_box_1">
                             <Image src={pintrest} alt="icon" className="w-8 h-8"/>
-                            <div className="icon_box_1_gradient"></div>
-                        </div>
-                        <div className="conctact_icon_box flex justify-center items-center icon_box_2">
-                            <Image src={twitch} alt="icon" className="w-8 h-8"/>
-                            <div className="icon_box_2_gradient"></div>
-                        </div>
-                        <div className="conctact_icon_box flex justify-center items-center icon_box_3">
-                            <Image src={netflix} alt="icon" className="w-8 h-8"/>
                             <div className="icon_box_1_gradient"></div>
                         </div>
                         <div className="conctact_icon_box flex justify-center items-center icon_box_4">
