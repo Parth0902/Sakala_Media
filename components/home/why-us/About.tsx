@@ -1,4 +1,4 @@
-import QualitiesHighlights from "./QualitiesHighlights";
+
 import StatisticsSection from "./StatisticsSection";
 import "./About.css";
 import Gradient from "@/components/shared/Gradient";

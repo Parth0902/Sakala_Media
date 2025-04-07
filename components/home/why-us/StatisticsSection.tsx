@@ -34,7 +34,7 @@ const StatisticsSection: React.FC<StatisticsSectionProps> = ({
   statistics = {
     activeClients: { number: 150, suffix: "+" },
     adAccounts: { number: 10, suffix: "B+" },
-    adSpend: { number: 120, prefix: "$", suffix: "M+" },
+    adSpend: { number: 20, prefix: "$", suffix: "M+" },
   },
 }) => {
   return (

@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useRef, useEffect} from "react";
-import { motion, useAnimationControls } from "framer-motion";
+import React, {useEffect} from "react";
+import {useAnimationControls } from "framer-motion";
 import Gradient from "@/components/shared/Gradient";
 
 const testimonials = [
@@ -38,7 +38,7 @@ const testimonials = [
 ];
 
 const TrustedBrands = () => {
-  const carousel = useRef<HTMLDivElement>(null);
+  // const carousel = useRef<HTMLDivElement>(null);
   const controls = useAnimationControls();
   const cardWidth = 420; // Fixed width for cards
   const gap = 40; // Gap between cards
