@@ -14,20 +14,18 @@ import bing from '@/assets/bing.svg'
 import twitter from '@/assets/x.svg'
 import Image from "next/image";
 import { motion, useAnimationControls } from "framer-motion";
-import companyLogo1 from "@/assets/Companylogo1.svg"
-import companyLogo2 from "@/assets/Companylogo2.svg"
-import companyLogo3 from "@/assets/Companylogo3.svg"
-import companyLogo4 from "@/assets/Companylogo4.svg"
-import companyLogo5 from "@/assets/Companylogo5.svg"
+import companyLogo1 from "@/assets/cl1.png"
+import companyLogo2 from "@/assets/cl2.png"
+import companyLogo3 from "@/assets/cl3.png"
+import companyLogo4 from "@/assets/cl4.png"
 import gradient from "@/assets/Ellipse.png";
 import mobileBg from "@/assets/mobileBg.png"
 
 const brandLogos = [
-  { src: companyLogo1, alt: "companyLogo1" },
+  { src: companyLogo1, alt: "abcd" },
   { src: companyLogo2, alt: "Google Logo" },
   { src: companyLogo3, alt: "Boat Logo" },
   { src: companyLogo4, alt: "LG Logo" },
-  { src: companyLogo5, alt: "LG Logo" },
 ];
 
 export default function Hero() {
