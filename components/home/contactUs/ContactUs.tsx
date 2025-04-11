@@ -1,13 +1,13 @@
 "use client";
 import { useState } from "react";
 import { ArrowRight } from "lucide-react";
-import Image from "next/image";
+// import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import youtube from "@/assets/YouTube.png"
-import pintrest from "@/assets/pinterest.svg"
-import facebook from "@/assets/facebook.png"
-import instagram from "@/assets/Instagram.png"
+// import youtube from "@/assets/YouTube.png"
+// import pintrest from "@/assets/pinterest.svg"
+// import facebook from "@/assets/facebook.png"
+// import instagram from "@/assets/Instagram.png"
 
 
 const ContactUs = () => {
@@ -41,7 +41,7 @@ const ContactUs = () => {
             </form>
            
         </div>
-        <div className=" w-full lg:flex justify-evenly pt-10 px-20 pb-10 hidden ">
+        {/* <div className=" w-full lg:flex justify-evenly pt-10 px-20 pb-10 hidden ">
                         <div className="relative conctact_icon_box flex justify-center items-center icon_box_1">
                             <Image src={youtube} alt="icon" className="w-8 h-8"/>
                             <div className="icon_box_1_gradient"></div>
@@ -58,7 +58,7 @@ const ContactUs = () => {
                             <Image src={instagram} alt="icon" className="w-8 h-8"/>
                             <div className="icon_box_4_gradient"></div>
                         </div>
-            </div>
+        </div> */}
       </div>
       
     </main>

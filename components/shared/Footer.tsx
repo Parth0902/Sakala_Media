@@ -52,9 +52,12 @@ const Footer = () => {
             <div className="z-50">
               <h3 className="text-xl font-semibold mb-4 text-start">Address</h3>
               <p className="z-50 text-gray-300">
-                Company Name: Swirith LLC (Swirith LLC is part of Skala Media),
+              SKALA MEDIA PRIVATE LIMITED
                 <br />
+                Shop No - GL-403, 4th Floor, DLF Cross Point Mall, DLF City Phase IV, Gurugram, Haryana, 122009, India
                 Ste. 1200, 1309 Coffeen Avenue, Sheridan, WY, Sheridan, US, 82801
+                <br />
+                GSTIN: 06ABNCS3297C1Z4
               </p>
               <p className="z-50 text-gray-300 mt-4">
                 Mailing address: 447 Broadway, 2nd Floor Suite #2366, New York, New York 10013, United States
