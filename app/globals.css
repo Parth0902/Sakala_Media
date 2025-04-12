@@ -128,6 +128,18 @@ html.lenis body {
   background-color: #FC0D1B;
   filter: blur(9px);
 }
+.icon_box_6{
+  background: linear-gradient(135deg, rgba(248, 251, 255, 0.04) 0%, rgba(255, 255, 255, 0.00) 100%);
+  box-shadow: 0px 0px 8px 0px rgba(243, 229, 36, 0.32) inset, 8px 4px 16px 0px rgba(0, 0, 0, 0.08);
+}
+.icon_box_6_gradient{
+  width: 23px;
+  height: 13px;
+  position: absolute;
+  bottom: 5px;
+  background-color: #f5e615;
+  filter: blur(9px);
+}
 .icon_box_2_gradient{
   width: 23px;
   height: 13px;

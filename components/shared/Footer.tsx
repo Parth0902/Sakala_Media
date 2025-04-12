@@ -59,9 +59,6 @@ const Footer = () => {
                 <br />
                 GSTIN: 06ABNCS3297C1Z4
               </p>
-              <p className="z-50 text-gray-300 mt-4">
-                Mailing address: 447 Broadway, 2nd Floor Suite #2366, New York, New York 10013, United States
-              </p>
             </div>
           </div>
           <div className="mt-12 pt-8 border-t border-gray-700 text-center">
